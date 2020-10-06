@@ -5,6 +5,8 @@ from streamlit_vega_lite import altair_component
 
 st.title("Penguin Data Explorer 🐧")
 
+st.write("Hover over the scatterplot to reveal details about a penguin. The code for this demo is at https://github.com/domoritz/streamlit-vega-lite-demo.")
+
 @st.cache
 def load(url):
     return  pd.read_json(url)
