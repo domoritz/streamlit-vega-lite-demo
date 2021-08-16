@@ -31,6 +31,6 @@ selection = altair_component(make_altair_scatterplot())
 
 if "_vgsid_" in selection:
     # the ids start at 1
-    st.write(df.iloc[selection["_vgsid_"][0] - 1])
+    st.write(df.iloc[[selection["_vgsid_"][0] - 1]])
 else:
     st.info("Hover over the chart above to see details about the Penguin here.")
